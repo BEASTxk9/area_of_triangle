@@ -1,19 +1,21 @@
 function Area() {
-    var length = parseInt(document
+    let length = parseInt(document
         .getElementById("length").value);
 
-    var width = parseInt(document
+    let width = parseInt(document
         .getElementById("width").value);
 
-    var height = parseInt(document
+    let height = parseInt(document
         .getElementById("height").value);
 
     console.log(typeof(side1));
-    var s = (length + width + height) / 2;
+    let s = (length + width + height) / 2;
 
-    var area = Math.sqrt(s * ((s - length) 
+    let area = Math.sqrt(s * ((s - length) 
             * (s - width) * (s - height)));
 
+  let area1 = area.toFixed(2)
+
     document.getElementById(
-        "display").innerHTML = area;
+        "display").innerHTML = area1;
 }
