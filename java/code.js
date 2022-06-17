@@ -14,7 +14,7 @@ function Area() {
     let area = Math.sqrt(s * ((s - length) 
             * (s - width) * (s - height)));
 
-  let area1 = area.toFixed(2)
+  let area1 = area.toFixed(2);
 
     document.getElementById(
         "display").innerHTML = area1;
